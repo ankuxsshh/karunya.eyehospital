@@ -5,7 +5,7 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Georgia', serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #6F8BA4;
@@ -23,7 +23,7 @@ html {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Exo", sans-serif;
+  font-family: 'Georgia', serif;
   font-weight: 700;
   color: #222;
 }
@@ -94,7 +94,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   font-weight: 700;
   letter-spacing: .5px;
   padding: .75rem 2rem;
-  font-family: "Exo", sans-serif;
+  font-family: 'Georgia', serif;
   text-transform: uppercase;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -356,7 +356,7 @@ a:focus {
 }
 
 .text-lg {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .gray-bg {
@@ -383,7 +383,7 @@ a:focus {
   font-weight: 600;
   padding: 10px 15px;
   color: #222;
-  font-family: "Exo", sans-serif;
+  font-family: 'Georgia', serif;
   text-transform: capitalize;
   font-size: 16px;
   transition: all .25s ease;
@@ -1477,7 +1477,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .backtop i {

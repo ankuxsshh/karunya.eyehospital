@@ -24,6 +24,9 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="static/css/style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
 
   <body id="top">
@@ -64,53 +67,49 @@
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities <i class="icofont-thin-down"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li>
+                    <a class="dropdown-item" href="">Insurance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">Optical Shops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">Sister Concerns</a>
+                  </li>
+                </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
+                <a class="nav-link dropdown-toggle" href="department" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
                   <li>
-                    <a class="dropdown-item" href="department.html">Departments</a>
+                    <a class="dropdown-item" href="">Treatments</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="department-single.html">Department Single</a>
+                    <a class="dropdown-item" href="">Eye Problems</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                  <li>
-                    <a class="dropdown-item" href="doctor.html">Doctors</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="doctor-single.html">Doctor Single</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="appoinment.html">Appoinment</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                  <li>
-                    <a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="blog-single.html">Blog Single</a>
-                  </li>
-                </ul>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="doctor">Doctors</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="doctor">Centers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -123,25 +122,25 @@
     {% endblock %}
 
     <!-- footer Start -->
+    <!-- Footer Start -->
     <footer class="footer section gray-bg">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mr-auto col-sm-6">
             <div class="widget mb-5 mb-lg-0">
               <div class="logo mb-4">
-                <img src="static/images/logo.png" alt="" class="img-fluid" />
+                <img src="static/images/logo.png" alt="Eye Hospital Logo" class="img-fluid" />
               </div>
-              <p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
-
+              <p>Providing world-class eye care with advanced technology and compassionate service to restore and enhance vision.</p>
               <ul class="list-inline footer-socials mt-4">
                 <li class="list-inline-item">
-                  <a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a>
+                  <a href="#"><i class="icofont-facebook"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a>
+                  <a href="#"><i class="icofont-twitter"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a>
+                  <a href="#"><i class="icofont-linkedin"></i></a>
                 </li>
               </ul>
             </div>
@@ -149,24 +148,23 @@
 
           <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="widget mb-5 mb-lg-0">
-              <h4 class="text-capitalize mb-3">Department</h4>
+              <h4 class="text-capitalize mb-3">Our Services</h4>
               <div class="divider mb-4"></div>
-
               <ul class="list-unstyled footer-menu lh-35">
                 <li>
-                  <a href="#">Surgery</a>
+                  <a href="#">Cataract Surgery</a>
                 </li>
                 <li>
-                  <a href="#">Wome's Health</a>
+                  <a href="#">LASIK & Refractive Surgery</a>
                 </li>
                 <li>
-                  <a href="#">Radiology</a>
+                  <a href="#">Retina Treatment</a>
                 </li>
                 <li>
-                  <a href="#">Cardioc</a>
+                  <a href="#">Glaucoma Treatment</a>
                 </li>
                 <li>
-                  <a href="#">Medicine</a>
+                  <a href="#">Pediatric Eye Care</a>
                 </li>
               </ul>
             </div>
@@ -174,24 +172,23 @@
 
           <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="widget mb-5 mb-lg-0">
-              <h4 class="text-capitalize mb-3">Support</h4>
+              <h4 class="text-capitalize mb-3">Quick Links</h4>
               <div class="divider mb-4"></div>
-
               <ul class="list-unstyled footer-menu lh-35">
                 <li>
-                  <a href="#">Terms & Conditions</a>
+                  <a href="#">Patient Portal</a>
+                </li>
+                <li>
+                  <a href="#">Insurance & Billing</a>
+                </li>
+                <li>
+                  <a href="#">FAQs</a>
                 </li>
                 <li>
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Company Support</a>
-                </li>
-                <li>
-                  <a href="#">FAQuestions</a>
-                </li>
-                <li>
-                  <a href="#">Company Licence</a>
+                  <a href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -201,21 +198,19 @@
             <div class="widget widget-contact mb-5 mb-lg-0">
               <h4 class="text-capitalize mb-3">Get in Touch</h4>
               <div class="divider mb-4"></div>
-
               <div class="footer-contact-block mb-4">
                 <div class="icon d-flex align-items-center">
                   <i class="icofont-email mr-3"></i>
-                  <span class="h6 mb-0">Support Available for 24/7</span>
+                  <span class="h6 mb-0">24/7 Support Available</span>
                 </div>
-                <h4 class="mt-2"><a href="tel:+23-345-67890">Support@email.com</a></h4>
+                <h4 class="mt-2"><a href="mailto:support@eyehospital.com">support@karunyaeyecare.com</a></h4>
               </div>
-
               <div class="footer-contact-block">
                 <div class="icon d-flex align-items-center">
-                  <i class="icofont-support mr-3"></i>
-                  <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                  <i class="icofont-phone mr-3"></i>
+                  <span class="h6 mb-0">Mon to Sat: 09:00 - 18:00</span>
                 </div>
-                <h4 class="mt-2"><a href="tel:+23-345-67890">+23-456-6588</a></h4>
+                <h4 class="mt-2"><a href="tel:+123-456-7890">+123-456-7890</a></h4>
               </div>
             </div>
           </div>
@@ -225,31 +220,31 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-6">
               <div class="copyright">
-                &copy; Copyright Reserved to <span class="text-color">Novena</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+                &copy; Copyright Reserved to <span class="text-color">Karunya Eye Care Hospital</span>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
                 <form action="#" class="subscribe">
-                  <input type="text" class="form-control" placeholder="Your Email address" />
-                  <a href="#" class="btn btn-main-2 btn-round-full">Subscribe</a>
+                  <input type="email" class="form-control" placeholder="Your Email Address" required />
+                  <button type="submit" class="btn btn-main-2 btn-round-full">Subscribe</button>
                 </form>
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-lg-4">
-              <a class="backtop js-scroll-trigger" href="#top"><i class="icofont-long-arrow-up"></i></a>
+              <a class="backtop js-scroll-trigger" href="#top"><i class="fa-solid fa-angles-up"></i></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Footer End -->
 
-    <!--     
+    <!--        
     Essential Scripts
-    =====================================    -->
+    =====================================       -->
 
     <!-- Main jQuery -->
     <script src="static/plugins/jquery/jquery.js"></script>
