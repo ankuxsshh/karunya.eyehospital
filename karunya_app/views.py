@@ -22,3 +22,9 @@ def appoinment(request):
 
 def doctor(request):
     return render(request, 'doctor.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
+def doctorsingle(request):
+    return render(request, 'doctor-single.html')

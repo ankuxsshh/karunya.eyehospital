@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Gallery | Karunya Eye Care
+{% endblock %}
+
+{% block content %}
+  <section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white">Our Gallery</span>
+            <h1 class="text-capitalize mb-5 text-lg">Moments at Karunya Eye Care</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <div class="section-title">
+            <h2>Our Eye Care Journey</h2>
+            <div class="divider mx-auto my-4"></div>
+            <p>Explore our state-of-the-art eye care facilities, advanced surgical procedures, and heartwarming patient journeys through our gallery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center mb-5">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn active"><input type="radio" name="shuffle-filter" value="all" checked="checked" />All</label>
+          <label class="btn"><input type="radio" name="shuffle-filter" value="cat1" />Surgeries</label>
+          <label class="btn"><input type="radio" name="shuffle-filter" value="cat2" />Facilities</label>
+          <label class="btn"><input type="radio" name="shuffle-filter" value="cat3" />Patient Care</label>
+          <label class="btn"><input type="radio" name="shuffle-filter" value="cat4" />Events</label>
+        </div>
+      </div>
+
+      <div class="row shuffle-wrapper portfolio-gallery">
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/1.jpg" alt="surgery-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/2.jpg" alt="surgery-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/3.jpg" alt="facility-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/4.jpg" alt="facility-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/5.jpg" alt="patient-care-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/6.jpg" alt="patient-care-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/7.jpg" alt="event-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/8.jpg" alt="event-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/9.jpg" alt="surgery-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/10.jpg" alt="facility-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/11.jpg" alt="patient-care-image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+          <div class="gallery-box">
+            <img src="static/images/gallery/12.jpg" alt="event-image" class="img-fluid w-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

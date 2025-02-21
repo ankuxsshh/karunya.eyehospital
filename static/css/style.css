@@ -226,7 +226,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .section-sm {
@@ -331,13 +331,13 @@ a:focus {
 .slick-slide:focus, .slick-slide a {
   outline: none;
 }
-
+/* 
 @media (max-width: 480px) {
   h2, .h2 {
     font-size: 1.3rem;
     line-height: 36px;
   }
-}
+} */
 
 .title-color {
   color: #223a66;
@@ -356,14 +356,14 @@ a:focus {
 }
 
 .text-lg {
-  font-size: 48px;
+  font-size: 29px;
 }
 
 .gray-bg {
   background: #f4f9fc;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .text-lg {
     font-size: 28px;
   }
@@ -373,7 +373,7 @@ a:focus {
   .text-lg {
     font-size: 28px;
   }
-}
+} */
 
 #navbarmain {
   padding: 20px 0px;
@@ -434,7 +434,7 @@ a:focus {
 
 .header-top-bar {
   background: #223a66;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 0px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   color: #fff;
@@ -508,9 +508,8 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
   }
-}
+} 
 
 @media (max-width: 400px) {
   .banner .block h1 {
@@ -519,7 +518,6 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
   }
 }
 
@@ -528,16 +526,8 @@ a:focus {
     font-size: 56px;
     line-height: 70px;
   }
-  .banner {
-    background: #fff !important;
-  }
 }
 
-@media (max-width: 992px) {
-  .banner {
-    background: #fff !important;
-  }
-}
 
 .about-img img {
   border-radius: 5px;
@@ -564,10 +554,10 @@ a:focus {
 .appoinment-content .emergency {
   position: absolute;
   content: "";
-  right: 10px;
-  bottom: 20px;
+  right: 82px;
+  bottom: 0px;
   background: #223a66;
-  padding: 48px;
+  padding: 2px;
 }
 
 .appoinment-content .emergency h2 {
@@ -792,7 +782,7 @@ a:focus {
   color: #223a66;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .doctors .btn-group {
     display: block;
   }
@@ -808,7 +798,7 @@ a:focus {
   .doctors .btn-group .btn {
     margin: 8px 3px;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .doctors .btn-group {
@@ -942,7 +932,7 @@ a:focus {
   opacity: .3;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .testimonial-wrap {
     margin-left: 0px;
   }
@@ -958,7 +948,7 @@ a:focus {
   .testimonial::before {
     display: none;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .testimonial-wrap {
