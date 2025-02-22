@@ -28,3 +28,6 @@ def gallery(request):
 
 def doctorsingle(request):
     return render(request, 'doctor-single.html')
+
+def specialities(request):
+    return render(request, 'specialities.html') 
