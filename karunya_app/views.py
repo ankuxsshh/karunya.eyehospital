@@ -8,14 +8,17 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
+def managements(request):
+    return render(request, 'managements.html')
+
 def services(request):
     return render(request, 'services.html')
 
 def department(request):
     return render(request, 'department.html')
 
-def contact(request):
-    return render(request, 'contact.html')
+def contactform(request):
+    return render(request, 'contactform.html')
 
 def appoinment(request):
     return render(request, 'appoinment.html')
@@ -31,3 +34,6 @@ def doctorsingle(request):
 
 def specialities(request):
     return render(request, 'specialities.html') 
+
+def eyeproblem(request):
+    return render(request, 'eyeproblem.html')

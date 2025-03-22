@@ -194,7 +194,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-round-full {
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 .btn.active:focus, .btn:active:focus, .btn:focus {
