@@ -364,18 +364,6 @@ a:focus {
   background: #e5e5e5;
 }
 
-/* @media (max-width: 480px) {
-  .text-lg {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 400px) {
-  .text-lg {
-    font-size: 28px;
-  }
-} */
-
 #navbarmain {
   padding: 20px 0px;
 }
@@ -529,9 +517,7 @@ a:focus {
   }
 }
 
-
 .about-img img {
-  border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 
@@ -597,8 +583,7 @@ a:focus {
   margin: 0px 10px;
   padding: 10px 30px;
   background-color: #fff;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  box-shadow: 0px 30px 30px 0px rgba(0, 42, 106, 0.1);
 }
 
 .feature-item .feature-icon i {
