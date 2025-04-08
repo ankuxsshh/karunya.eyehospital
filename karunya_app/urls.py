@@ -14,4 +14,8 @@ urlpatterns = [
     path('doctor-single', views.doctorsingle, name='doctor-single'), 
     path('specialities', views.specialities, name='specialities'), 
     path('eyeproblem', views.eyeproblem, name='eyeproblem'),
+    path('centres', views.centres, name='centres'),
+    path('insurances', views.insurances, name='insurances'),
+    path('events', views.events, name='events'),
+
 ]

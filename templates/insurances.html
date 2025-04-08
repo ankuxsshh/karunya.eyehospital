@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Insurances | Karunya Eye Hospital
+{% endblock %}
+
+{% block content %}
+  <section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white"></span>
+            <h1 class="text-capitalize mb-5 text-lg">Insurances</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section insurance-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="">
+            <h2 class="section-title mb-4 text-center" style="color: #005e79;">LIST OF EMPANELLED INSURANCE COMPANIES/TPAs</h2>
+            <table class="table table-bordered table-striped table-hover text-center">
+              <thead class="thead-dark">
+                <tr>
+                  <th>S.No</th>
+                  <th>Insurance Company Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for company in insurances %}
+                  <tr>
+                    <td style="color: #005e79;">{{ forloop.counter }}</td>
+                    <td style="color: #005e79;">
+                      <strong>{{ company.name }}</strong>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

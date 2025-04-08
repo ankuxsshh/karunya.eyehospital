@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from .models import Testimonial, InsuranceCompany
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    testimonials = Testimonial.objects.all().order_by('-created_at')
+    return render(request, 'index.html', {'testimonials': testimonials})
 
 def about(request):
     return render(request, 'about.html')
@@ -37,3 +39,13 @@ def specialities(request):
 
 def eyeproblem(request):
     return render(request, 'eyeproblem.html')
+
+def centres(request):
+    return render(request, 'centres.html')
+
+def insurances(request):
+    insurances = InsuranceCompany.objects.all()
+    return render(request, 'insurances.html', {'insurances': insurances})
+
+def events(request):    
+    return render(request, 'events.html')

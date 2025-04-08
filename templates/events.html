@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Events | Karunya Eye Hospital
+{% endblock %}
+
+{% block content %}
+  <section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-left">
+            <span class="text-white">Our Events</span>
+            <h1 class="text-capitalize mb-5 text-lg">Events at Karunya Eye Hospital</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery">
+    <div class="container">
+      <div class="row justify-content-left">
+        <div class="col-lg-6 text-left">
+          <div class="section-title">
+            <h2>Hospital Events</h2>
+            <div class="divider mx-auto my-4"></div>
+            <p>Explore our state-of-the-art eye hospital facilities, advanced surgical procedures, and heartwarming patient journeys through our gallery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row shuffle-wrapper portfolio-gallery">
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+          <div class="gallery-box">
+            <img src="static/images/18 N.jpg" alt="surgery-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+          <div class="gallery-box">
+            <img src="static/images/19 N.jpg" alt="surgery-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+          <div class="gallery-box">
+            <img src="static/images/20 N.jpg" alt="facility-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+          <div class="gallery-box">
+            <img src="static/images/21 N.jpg" alt="facility-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+          <div class="gallery-box">
+            <img src="static/images/22 N.jpg" alt="patient-care-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+          <div class="gallery-box">
+            <img src="static/images/23 N.jpg" alt="patient-care-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+          <div class="gallery-box">
+            <img src="static/images/24 N.jpg" alt="event-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+          <div class="gallery-box">
+            <img src="static/images/25 N.jpg" alt="event-image" class="img-fluid w-100 gallery-img-custom" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Overlay Modal -->
+  <div id="imageModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 position-relative">
+          <img id="modalImage" src="" class="w-100 rounded" style="max-height: 110vh; object-fit: contain;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Optional dark fade background if needed */
+    .modal-backdrop.show {
+      background-color: rgba(0, 0, 0, 0.99);
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".gallery-img-custom");
+      const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+      const modalImage = document.getElementById("modalImage");
+  
+      images.forEach(img => {
+        img.addEventListener("click", function () {
+          modalImage.src = this.src;
+          modal.show();
+        });
+      });
+    });
+  </script>
+{% endblock %}
