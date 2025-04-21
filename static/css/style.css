@@ -446,7 +446,7 @@ a:focus {
 }
 
 .bg-1 {
-  background: url("../images/gallery/34 Q.jpg") no-repeat 50% 50%;
+  background: url("../images/Imagea.jpg") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
 }
@@ -456,15 +456,15 @@ a:focus {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background-image: url("../images/gallery/34 Q.jpg"); 
+  background-image: url("../images/Imagea.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 /* static/css/style.css */
-.banner:before {
+/* .banner:before {
   content: "";
   position: absolute;
   left: 0;
@@ -475,7 +475,7 @@ a:focus {
   height: 100%;
   opacity: 0.5;
   background: #005e7985;
-}
+} */
 
 
 .banner .block {
@@ -1564,5 +1564,10 @@ a:focus {
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
-  height: 300px;
+  height: 250px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
 }
