@@ -227,7 +227,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .section-sm {
@@ -559,7 +559,7 @@ a:focus {
 .appoinment-content .emergency {
   position: absolute;
   content: "";
-  right: 82px;
+  right: 254px;
   bottom: 0px;
   background: #005e79;
   padding: 2px;

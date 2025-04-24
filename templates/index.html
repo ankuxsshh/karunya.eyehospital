@@ -59,7 +59,7 @@
               <span>24/7 Eye Hospital</span>
               <h4 class="mb-3">Book an Eye Checkup</h4>
               <p class="mb-4">Receive round-the-clock support for any eye emergency. We specialize in comprehensive eye hospital services.</p>
-              <a href="appointment.html" class="btn btn-main btn-round-full">Schedule an Appointment</a>
+              <a href="appoinment" class="btn btn-main btn-round-full">Schedule an Appointment</a>
             </div>
 
             <div class="feature-item mb-5 mb-lg-0">
@@ -243,9 +243,9 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="appoinment-content">
-            <img src="static/images/about/img-3.jpg" alt="" class="img-fluid" />
+            <img src="static/images/12.png" alt="" class="img-fluid" />
             <div class="emergency">
-              <h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+              <h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+91 9856798098</h2>
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@
                 <textarea name="message" id="message" class="form-control" rows="6" placeholder="Describe Your Eye Concern"></textarea>
               </div>
 
-              <a class="btn btn-main btn-round-full" href="appoinment.html" style="width: 100%;">Book Your Appointment <i class="fa-solid fa-angles-right text-white"></i></a>
+              <a class="btn btn-main btn-round-full" href="appoinment" style="width: 100%;">Book Your Appointment <i class="fa-solid fa-angles-right text-white"></i></a>
             </form>
           </div>
         </div>
@@ -331,12 +331,12 @@
     </div>
 
     <section class="section testimonials">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-12 testimonial-wrap-2">
-          {% for testimonial in testimonials %}
-          <div class="testimonial-block style-2 gray-bg">
-            <i class="icofont-quote-right"></i>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 testimonial-wrap-2">
+            {% for testimonial in testimonials %}
+            <div class="testimonial-block style-2 gray-bg">
+              <i class="icofont-quote-right"></i>
     
             <div class="testimonial-thumb">
               <img src="{{ testimonial.image.url }}" alt="" class="img-fluid" />
@@ -352,73 +352,78 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>    
 
-  <!-- Start About Us Section -->
-  <section class="section clients">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <div class="section-title text-center">
-            <h2>GOVERNMENT PROJECTS</h2>
-            <div class="divider mx-auto my-4"></div>
-            <p>We collaborate with leading eye hospital specialists and institutions to bring the best vision care to our patients. Their expertise and commitment help us ensure the highest standards of eye health and treatment.</p>
-          </div>
+<!-- Start About Us Section -->
+<section class="section clients">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="section-title text-center">
+          <h2>GOVERNMENT PROJECTS</h2>
+          <div class="divider mx-auto my-4"></div>
+          <p>
+            We collaborate with leading eye hospital specialists and institutions to bring the best vision care to our patients.
+            Their expertise and commitment help us ensure the highest standards of eye health and treatment.
+          </p>
         </div>
       </div>
-    </div>
-  
-<!-- Carousel Section -->
-<div class="container">
-  <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row clients-logo justify-content-center">
-
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
-              <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
-                <img src="static/images/echs.png" alt="Partner 1" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
-              </div>
-              <div style="background-color: white; color: black; padding: 5px 0; width: 78%; font-weight: 600;">ECHS</div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
-              <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
-                <img src="static/images/medisep.png" alt="Partner 2" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
-              </div>
-              <div style="background-color: white; color: black; padding: 5px 0; width: 85%; font-weight: 600;">MEDISEP</div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
-              <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
-                <img src="static/images/cghs.png" alt="Partner 3" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
-              </div>
-              <div style="background-color: white; color: black; padding: 5px 0; width: 81%; font-weight: 600;">CGHS</div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
-              <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
-                <img src="static/images/kasp.png" alt="Partner 4" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
-              </div>
-              <div style="background-color: white; color: black; padding: 5px 0; width: 81%; font-weight: 600;">KASP</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
+
+  <!-- Carousel Section -->
+  <div class="container">
+    <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row clients-logo justify-content-center">
+
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
+                <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                  <img src="static/images/echs.png" alt="Partner 1" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
+                </div>
+                <div style="background-color: white; color: black; padding: 5px 0; width: 78%; font-weight: 600;">ECHS</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
+                <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                  <img src="static/images/medisep.png" alt="Partner 2" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
+                </div>
+                <div style="background-color: white; color: black; padding: 5px 0; width: 85%; font-weight: 600;">MEDISEP</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
+                <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                  <img src="static/images/cghs.png" alt="Partner 3" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
+                </div>
+                <div style="background-color: white; color: black; padding: 5px 0; width: 81%; font-weight: 600;">CGHS</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="client-thumb text-center d-flex flex-column align-items-center" style="height: 200px; justify-content: center;">
+                <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                  <img src="static/images/kasp.png" alt="Partner 4" class="img-fluid" style="max-height: 100%; object-fit: contain;" />
+                </div>
+                <div style="background-color: white; color: black; padding: 5px 0; width: 81%; font-weight: 600;">KASP</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Slide 1 -->
+
+      </div>
+    </div>
+  </div>
+</section>
 <!-- End About Us Section -->
 
 
