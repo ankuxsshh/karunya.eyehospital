@@ -49,3 +49,6 @@ def insurances(request):
 
 def events(request):    
     return render(request, 'events.html')
+
+def treatments(request):
+    return render(request, 'treatments.html')

@@ -664,9 +664,10 @@ a:focus {
 
 .service .service-item {
   background: #fff;
-  padding: 30px;
-  border-radius: 5px;
-  height: 260px;
+  padding: 10px;
+  border-radius: 0px;
+  height: 280px;
+  width: 355px;
 }
 
 .service .icon {
