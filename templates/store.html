@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Optical Store | Karunya Eye Hospital
+{% endblock %}
+
+{% block content %}
+  <section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white">Services</span>
+            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="optical-store-section py-5">
+    <div class="container">
+      <div class="row shadow rounded bg-light overflow-hidden">
+        
+        <!-- Text Content Left -->
+        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+          <h2 class="mb-4 text-primary fw-bold">Karunya Eye Hospital (Optical Store – Insight Galleria)</h2>
+          <p class="text-muted">
+            At KEH’s Optical Store (Insight Galleria), find your perfect eyewear with our stylish frames, sunglasses, and tailored contact lens options.
+          </p>
+          <h4 class="text-dark mt-4">Discover Your Perfect Vision Solution</h4>
+          <p class="text-muted">
+            At KEH’s Optical Store, we believe that clear vision enhances your quality of life. Our extensive range of high-quality eyewear and personalized services ensures that you find the perfect solution for your vision needs.
+          </p>
+
+          <h5 class="mt-4 text-primary">Our Products</h5>
+          <ul class="text-muted">
+            <li><strong>Eyeglasses:</strong> Stylish frames from top brands, for all face shapes, in prescription and non-prescription options.</li>
+            <li><strong>Sunglasses:</strong> UV-protective, polarized, and prescription sunglasses in trendy styles.</li>
+            <li><strong>Contact Lenses:</strong> Daily disposables, extended wear, and specialty lenses tailored to individual needs.</li>
+          </ul>
+
+          <h5 class="mt-4 text-primary">Our Services</h5>
+          <ul class="text-muted">
+            <li><strong>Personalized Consultations:</strong> Expert optometrists help you choose the best eyewear based on your needs.</li>
+            <li><strong>Eye Exams:</strong> Comprehensive assessments to determine accurate prescriptions and eye health.</li>
+            <li><strong>Lens Customization:</strong> Options like anti-reflective coatings, blue light filters, and progressive lenses.</li>
+          </ul>
+        </div>
+
+        <!-- Image Right -->
+        <div class="col-lg-6 p-0">
+          <img src="path/to/optical-store.jpg" alt="Optical Store - Insight Galleria" class="img-fluid w-100 h-100 object-fit-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block styles %}
+  <style>
+    .optical-store-section {
+      background-color: #f0f4f8;
+    }
+
+    .object-fit-cover {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .optical-store-section .row {
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+{% endblock %}

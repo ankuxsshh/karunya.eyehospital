@@ -52,3 +52,27 @@ def events(request):
 
 def treatments(request):
     return render(request, 'treatments.html')
+
+def lens(request):
+    return render(request, 'lens.html')
+
+def opt(request):
+    return render(request, 'opt.html')
+
+def cataract(request):
+    return render(request, 'cataract.html')
+
+def retina(request):
+    return render(request, 'retina.html')
+
+def laser(request):
+    return render(request, 'laser.html')
+
+def intra(request):
+    return render(request, 'intra.html')
+
+def store(request):
+    return render(request, 'store.html')
+
+def customer(request):
+    return render(request, 'customer.html')

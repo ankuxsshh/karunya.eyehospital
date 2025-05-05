@@ -17,6 +17,13 @@ urlpatterns = [
     path('centres', views.centres, name='centres'),
     path('insurances', views.insurances, name='insurances'),
     path('events', views.events, name='events'),
+    path('lens', views.lens, name='lens'),
     path('treatments', views.treatments, name='treatments'),
-
+    path('opt', views.opt, name='opt'),
+    path('cataract', views.cataract, name='cataract'),
+    path('retina', views.retina, name='retina'),
+    path('laser', views.laser, name='laser'),
+    path('intra', views.intra, name='intra'),
+    path('store', views.store, name='store'),
+    path('customer', views.customer, name='customer'),
 ]
