@@ -451,16 +451,65 @@ a:focus {
   position: relative;
 }
 
-/* static/css/style.css */
+/* CSS Updates */
 .banner {
   position: relative;
   overflow: hidden;
-  background: #fff;
-  background-image: url("../images/Imagea.jpg"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 90vh;
+}
+
+.slider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.block {
+  position: relative;
+  z-index: 2;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 8px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: rgba(255,255,255,0.9);
 }
 
 /* static/css/style.css */
