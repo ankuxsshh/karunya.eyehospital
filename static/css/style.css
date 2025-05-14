@@ -637,6 +637,60 @@ a:focus {
   height: auto;
 }
 
+/* Responsive adjustments for appointment section */
+@media (max-width: 768px) {
+  .appoinment-content {
+    text-align: center;
+  }
+
+  .appoinment-content .emergency {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+  }
+
+  .appoinment-wrap {
+    padding: 15px;
+  }
+
+  .appoinment-form .form-control {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .appoinment-form textarea.form-control {
+    height: auto;
+    font-size: 14px;
+  }
+
+  .appoinment .row > div[class*="col-"] {
+    margin-bottom: 15px;
+  }
+
+  .btn.btn-main {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .appoinment-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .appoinment-wrap h2 {
+    font-size: 20px;
+  }
+
+  .appoinment-wrap p {
+    font-size: 14px;
+  }
+}
+
 .client-thumb {
   text-align: center;
 }
@@ -734,6 +788,64 @@ a:focus {
 
 .service .content {
   clear: both;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1199px) {
+  .service .service-item {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .service .icon {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    text-align: center;
+  }
+
+  .service .icon img {
+    margin-bottom: 10px;
+  }
+
+  .service h4 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .service .content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .service .service-item {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .service .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service .icon img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .service h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .service .content p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
 }
 
 .service-block {
@@ -988,39 +1100,48 @@ a:focus {
   opacity: .3;
 }
 
-/* @media (max-width: 480px) {
-  .testimonial-wrap {
-    margin-left: 0px;
-  }
-  .testimonial::before {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .testimonial-wrap {
-    margin-left: 0px;
-  }
-  .testimonial::before {
-    display: none;
-  }
-} */
-
 @media (max-width: 768px) {
-  .testimonial-wrap {
-    margin-left: 0px;
+  .testimonial-block.style-2 {
+    height: auto; /* Allow height to expand with content */
+    padding: 20px;
+    margin: 0 0 20px 0;
   }
-  .testimonial::before {
-    display: none;
+
+  .testimonial-block.style-2 .testimonial-thumb {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-block.style-2 .testimonial-thumb img {
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+
+  .testimonial-block.style-2 .client-info {
+    text-align: center;
+  }
+
+  .testimonial-block.style-2 i {
+    bottom: -10px;
+    right: 10px;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 992px) {
-  .testimonial-wrap {
-    margin-left: 0px;
+@media (max-width: 480px) {
+  .testimonial-block.style-2 {
+    padding: 15px;
   }
-  .testimonial::before {
-    display: none;
+
+  .testimonial-block p {
+    font-size: 16px;
+  }
+
+  .testimonial-block.style-2 i {
+    font-size: 30px;
+    right: 5px;
+    bottom: -5px;
   }
 }
 
@@ -1620,4 +1741,62 @@ a:focus {
 .card-body {
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .client-thumb {
+    max-width: 100% !important;
+  }
+}
+
+/* Ensure that the section is responsive */
+.clients {
+  background-color: white;
+  padding: 50px 0;
+}
+
+/* Carousel items styling */
+.client-thumb {
+  margin: 10px;
+}
+
+/* Responsive styles for images inside the carousel */
+.client-thumb img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Section title and description responsiveness */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .carousel-item .clients-logo {
+    flex-wrap: wrap;
+  }
+
+  .carousel-item .col-lg-3 {
+    flex: 1 0 45%; /* Adjust width for mobile view */
+    margin-bottom: 15px;
+  }
+}
+
+/* For very small screens (mobile portrait) */
+@media (max-width: 576px) {
+  .carousel-item .col-lg-3 {
+    flex: 1 0 90%; /* Almost full width for very small screens */
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-title p {
+    font-size: 0.9rem;
+  }
 }
