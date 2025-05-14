@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
 html {
   overflow-x: hidden;
 }
@@ -22,34 +23,51 @@ html {
   display: none;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #222;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 44px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1rem;
   line-height: 30px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
 
@@ -61,14 +79,20 @@ p {
   background: #005e79;
 }
 
-input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
   box-shadow: none;
   height: 45px;
   outline: none;
   font-size: 14px;
 }
 
-input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
   box-shadow: none;
   border: 1px solid #005e79;
 }
@@ -197,7 +221,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   border-radius: 0px;
 }
 
-.btn.active:focus, .btn:active:focus, .btn:focus {
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
   outline: 0;
 }
 
@@ -296,7 +322,8 @@ a {
   transition: all .35s ease;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #005e79;
   text-decoration: none;
 }
@@ -329,9 +356,11 @@ a:focus {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.slick-slide:focus, .slick-slide a {
+.slick-slide:focus,
+.slick-slide a {
   outline: none;
 }
+
 /* 
 @media (max-width: 480px) {
   h2, .h2 {
@@ -502,14 +531,15 @@ a:focus {
   height: 12px;
   width: 12px;
   margin: 0 8px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
 }
 
-.dot.active, .dot:hover {
-  background-color: rgba(255,255,255,0.9);
+.dot.active,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* static/css/style.css */
@@ -562,16 +592,18 @@ a:focus {
     font-size: 38px;
     line-height: 50px;
   }
+
   .banner {
     min-height: 450px;
   }
-} 
+}
 
 @media (max-width: 400px) {
   .banner .block h1 {
     font-size: 28px;
     line-height: 40px;
   }
+
   .banner {
     min-height: 450px;
   }
@@ -666,7 +698,7 @@ a:focus {
     font-size: 14px;
   }
 
-  .appoinment .row > div[class*="col-"] {
+  .appoinment .row>div[class*="col-"] {
     margin-bottom: 15px;
   }
 
@@ -908,7 +940,9 @@ a:focus {
   color: #fff;
 }
 
-.doctors .btn-group > .btn-group:not(:last-child) > .btn, .doctors .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .doctors .btn-group > .btn:not(:first-child) {
+.doctors .btn-group>.btn-group:not(:last-child)>.btn,
+.doctors .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.doctors .btn-group>.btn:not(:first-child) {
   border-radius: 3px;
 }
 
@@ -971,6 +1005,7 @@ a:focus {
   .doctors .btn-group {
     display: block;
   }
+
   .doctors .btn-group .btn {
     margin: 8px 3px;
   }
@@ -1102,7 +1137,8 @@ a:focus {
 
 @media (max-width: 768px) {
   .testimonial-block.style-2 {
-    height: auto; /* Allow height to expand with content */
+    height: auto;
+    /* Allow height to expand with content */
     padding: 20px;
     margin: 0 0 20px 0;
   }
@@ -1308,7 +1344,7 @@ a:focus {
   margin-top: 20px;
 }
 
-.post-comments .media > .pull-left {
+.post-comments .media>.pull-left {
   padding-right: 20px;
 }
 
@@ -1381,7 +1417,7 @@ a:focus {
   margin-right: 20px;
 }
 
-.post-author > img {
+.post-author>img {
   border: 1px solid #dedede;
   max-width: 120px;
   padding: 5px;
@@ -1431,18 +1467,21 @@ a:focus {
   margin-top: 80px;
 }
 
-.comment-reply-form input, .comment-reply-form textarea {
+.comment-reply-form input,
+.comment-reply-form textarea {
   height: 35px;
   border-radius: 0;
   box-shadow: none;
 }
 
-.comment-reply-form input:focus, .comment-reply-form textarea:focus {
+.comment-reply-form input:focus,
+.comment-reply-form textarea:focus {
   box-shadow: none;
   border: 1px solid #005e79;
 }
 
-.comment-reply-form textarea, .comment-reply-form .btn-main {
+.comment-reply-form textarea,
+.comment-reply-form .btn-main {
   height: auto;
 }
 
@@ -1577,7 +1616,7 @@ a:focus {
 }
 
 .widget .footer-menu a:hover {
-  color:#005e79;
+  color: #005e79;
 }
 
 .footer-contact-block span {
@@ -1662,7 +1701,8 @@ a:focus {
 
 /* Styles for Our Approach to Eye Care Section */
 .approach-section {
-  padding: 50px 10%; /* Adds space on left and right */
+  padding: 50px 10%;
+  /* Adds space on left and right */
 }
 
 .approach-card {
@@ -1691,7 +1731,8 @@ a:focus {
 
 /* Styles for Quality Objectives Section */
 .quality-section {
-  padding: 50px 15%; /* Adds space on left and right */
+  padding: 50px 15%;
+  /* Adds space on left and right */
   text-align: center;
 }
 
@@ -1749,54 +1790,3 @@ a:focus {
   }
 }
 
-/* Ensure that the section is responsive */
-.clients {
-  background-color: white;
-  padding: 50px 0;
-}
-
-/* Carousel items styling */
-.client-thumb {
-  margin: 10px;
-}
-
-/* Responsive styles for images inside the carousel */
-.client-thumb img {
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* Section title and description responsiveness */
-@media (max-width: 768px) {
-  .section-title h2 {
-    font-size: 1.8rem;
-  }
-
-  .section-title p {
-    font-size: 1rem;
-  }
-
-  .carousel-item .clients-logo {
-    flex-wrap: wrap;
-  }
-
-  .carousel-item .col-lg-3 {
-    flex: 1 0 45%; /* Adjust width for mobile view */
-    margin-bottom: 15px;
-  }
-}
-
-/* For very small screens (mobile portrait) */
-@media (max-width: 576px) {
-  .carousel-item .col-lg-3 {
-    flex: 1 0 90%; /* Almost full width for very small screens */
-  }
-
-  .section-title h2 {
-    font-size: 1.5rem;
-  }
-
-  .section-title p {
-    font-size: 0.9rem;
-  }
-}
