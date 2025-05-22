@@ -7,8 +7,8 @@ def index(request):
     testimonials = Testimonial.objects.all().order_by('-created_at')
     return render(request, 'index.html', {'testimonials': testimonials})
 
-def about(request):
-    return render(request, 'about.html')
+def aboutus(request):
+    return render(request, 'aboutus.html')
 
 def managements(request):
     return render(request, 'managements.html')
