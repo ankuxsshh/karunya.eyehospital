@@ -1776,7 +1776,7 @@ a:focus {
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
-  height: 250px;
+  height: 300px;
 }
 
 .card-body {
