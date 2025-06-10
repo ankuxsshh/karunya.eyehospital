@@ -12,14 +12,10 @@ Home | Karunya Eye Hospital
       <img src="static/images/Imagea.jpg" alt="Eye Care 1" />
     </div>
     <div class="slide">
-      <img
-        src="https://media.istockphoto.com/id/1489731410/photo/digital-vision-eye-care-concept-doctor-using-technology-for-eye-test-vision-checking-eyesight.jpg?s=612x612&w=0&k=20&c=RBVpfwrF1XjNZM6Ur19V7AgdWwM2kiyEE6O5yfGOFN0="
-        alt="Eye Care 2" />
+      <img src="static/images/banner.jpg" alt="Eye Care 2" />
     </div>
     <div class="slide">
-      <img
-        src="https://media.istockphoto.com/id/1189207226/photo/female-patient-checking-vision-in-ophthalmological-clinic.jpg?s=612x612&w=0&k=20&c=jgoUMyIj09OnX6lc5FY3KDcheFDZ9zll6uZTHafmmgk="
-        alt="Eye Care 3" />
+      <img src="static/images/banner2.jpg" alt="Eye Care 3" />
     </div>
   </div>
 
@@ -80,7 +76,7 @@ Home | Karunya Eye Hospital
             <div class="feature-icon mb-4">
               <i class="ri-eye-line"></i>
             </div>
-            <span>24/7 Eye Hospital</span>
+            <span>24/7 Eye Care</span>
             <h4 class="mb-3">Book an Eye Checkup</h4>
             <p class="mb-4">Receive round-the-clock support for any eye emergency. We specialize in comprehensive eye
               Hospital services.</p>
@@ -91,7 +87,7 @@ Home | Karunya Eye Hospital
             <div class="feature-icon mb-4">
               <i class="ri-phone-line"></i>
             </div>
-            <span>Emergency Eye Hospital</span>
+            <span>Emergency Eye Care</span>
             <h4 class="mb-3">Call: +91 97456 88850</h4>
             <p>We provide 24/7 emergency eye Hospital services. If you experience sudden vision loss, eye injury, or
               severe discomfort, contact us immediately.</p>
@@ -448,10 +444,15 @@ Home | Karunya Eye Hospital
             </div>
 
             <div class="client-info">
-              <h4>{{ testimonial.title }}</h4>
+              <div class="testimonial-rating d-flex align-items-center mb-2" style="gap: 4px;">
+                {% for i in "12345"|slice:":testimonial.rating"|make_list %}
+                <img src="static/images/star.png" alt="star" width="24" height="24">
+                {% endfor %}
+              </div>
               <span>{{ testimonial.name }}</span>
               <p>{{ testimonial.message }}</p>
             </div>
+
           </div>
           {% endfor %}
         </div>
