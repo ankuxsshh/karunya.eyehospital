@@ -137,27 +137,27 @@ Home | Karunya Eye Hospital
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="counter-stat">
             <i class="icofont-eye-alt"></i>
-            <span class="h3">75</span>k<p>Happy Patients</p>
+            <span class="h3">783</span>k<p>Happy Patients</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="counter-stat">
             <i class="icofont-surgery"></i>
-            <span class="h3">850</span>+<p>Successful Eye Surgeries</p>
+            <span class="h3">30425</span>+<p>Successful Eye Surgeries</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="counter-stat">
             <i class="icofont-doctor"></i>
-            <span class="h3">50</span>+<p>Expert Ophthalmologists</p>
+            <span class="h3">9</span>+<p>Expert Ophthalmologists</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="counter-stat">
             <i class="icofont-globe"></i>
-            <span class="h3">25</span>
-            <p>Global Eye Hospital Centers</p>
+            <span class="h3">3</span>
+            <p>Eye Hospital Centers</p>
           </div>
         </div>
       </div>
@@ -365,9 +365,8 @@ Home | Karunya Eye Hospital
         <div class="section-title text-center">
           <h2>GOVERNMENT PROJECTS</h2>
           <div class="divider mx-auto my-4"></div>
-          <p>We collaborate with leading eye Hospital specialists and institutions to bring the best vision Hospital to
-            our patients. Their expertise and commitment help us ensure the highest standards of eye health and
-            treatment.</p>
+          <p>We are empaneled with following prestigious government projects to provide best care and treatment to the
+            patients/beneficiaries visiting our hospital under respective schemes.</p>
         </div>
       </div>
     </div>
@@ -383,16 +382,7 @@ Home | Karunya Eye Hospital
           <div class="logo-container">
             <img src="static/images/echs.png" alt="ECHS" class="img-fluid" />
           </div>
-          <div class="logo-label">ECHS</div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-3 col-8">
-        <div class="client-thumb text-center d-flex flex-column align-items-center h-200">
-          <div class="logo-container">
-            <img src="static/images/medisep.png" alt="MEDISEP" class="img-fluid" />
-          </div>
-          <div class="logo-label">MEDISEP</div>
+          <div class="logo-label fw-500">ECHS</div>
         </div>
       </div>
 
@@ -401,7 +391,18 @@ Home | Karunya Eye Hospital
           <div class="logo-container">
             <img src="static/images/cghs.png" alt="CGHS" class="img-fluid" />
           </div>
-          <div class="logo-label">CGHS</div>
+          <br>
+          <div class="logo-label fw-500">CGHS</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-8">
+        <div class="client-thumb text-center d-flex flex-column align-items-center h-200">
+          <div class="logo-container">
+            <img src="static/images/medisep.png" alt="MEDISEP" class="img-fluid" />
+          </div>
+          <br>
+          <div class="logo-label fw-500">MEDISEP</div>
         </div>
       </div>
 
@@ -410,7 +411,7 @@ Home | Karunya Eye Hospital
           <div class="logo-container">
             <img src="static/images/kasp.png" alt="KASP" class="img-fluid" />
           </div>
-          <div class="logo-label">KASP</div>
+          <div class="logo-label fw-500">KASP</div>
         </div>
       </div>
     </div>
@@ -444,12 +445,14 @@ Home | Karunya Eye Hospital
             </div>
 
             <div class="client-info">
+              <span><b>{{ testimonial.name }}</b></span>
+              <br>
+              <br>
               <div class="testimonial-rating d-flex align-items-center mb-2" style="gap: 4px;">
                 {% for i in "12345"|slice:":testimonial.rating"|make_list %}
                 <img src="static/images/star.png" alt="star" width="24" height="24">
                 {% endfor %}
               </div>
-              <span>{{ testimonial.name }}</span>
               <p>{{ testimonial.message }}</p>
             </div>
 
