@@ -1,189 +1,184 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Doctors | Karunya Eye Hospital
+Doctors | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-left">
-            <span class="text-white">Our Specialists</span>
-            <h1 class="text-capitalize mb-5 text-lg">Expert Eye Hospital Doctors</h1>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-left">
+          <span class="text-white">Our Specialists</span>
+          <h1 class="text-capitalize mb-5 text-lg">Expert Eye Hospital Doctors</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section doctors">
+  <div class="container">
+    <div class="row justify-content-left">
+      <div class="col-lg-6 text-left">
+        <div class="section-title">
+          <h2>Meet Our Eye Specialists</h2>
+          <div class="divider mx-auto my-4"></div>
+          <p>Our dedicated team of ophthalmologists and eye specialists is here to provide exceptional vision care using
+            the latest advancements in eye treatment.</p>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} <div class="col-12 text-center mb-5">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn active"><input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+          Specialties</label>
+      </div>
+    </div> {% endcomment %}
+
+    <div class="row shuffle-wrapper portfolio-gallery">
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor1.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. JOJU.K. EAPEN</a></h4>
+            <p>MBBS, D.O (PHACO SURGEON)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor2.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. K.P. MATHEWS</a></h4>
+            <p>MBBS, DOMS (CONSULTANT OPHTHALMOLOGIST)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor3.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. RAMALINGAM ARJUNA REDDY</a></h4>
+            <p>MBBS, D.A (ANAESTHETIST)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor4.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. LEELA MATHEW</a></h4>
+            <p>MBBS, MS, DO (CONSULTANT OPHTHALMOLOGIST)</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="section doctors">
-    <div class="container">
-      <div class="row justify-content-left">
-        <div class="col-lg-6 text-left">
-          <div class="section-title">
-            <h2>Meet Our Eye Specialists</h2>
-            <div class="divider mx-auto my-4"></div>
-            <p>Our dedicated team of ophthalmologists and eye specialists is here to provide exceptional vision care using the latest advancements in eye treatment.</p>
+    <div class="row shuffle-wrapper portfolio-gallery">
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor5.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. MAREEN ABRAHAM</a></h4>
+            <p>MS, DO, FCLI (CONSULTANT OPHTHALMOLOGIST)</p>
           </div>
         </div>
       </div>
 
-      {% comment %} <div class="col-12 text-center mb-5">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn active"><input type="radio" name="shuffle-filter" value="all" checked="checked" />All Specialties</label>
-        </div>
-      </div> {% endcomment %}
-
-      <div class="row shuffle-wrapper portfolio-gallery">
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor1.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. JOJU.K. EAPEN</a></h4>
-              <p>MBBS, D.O (PHACO SURGEON)</p>
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/premi.jpeg" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor2.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. K.P. MATHEWS</a></h4>
-              <p>MBBS, DOMS (CONSULTANT OPHTHALMOLOGIST)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor3.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. RAMALINGAM ARJUNA REDDY</a></h4>
-              <p>MBBS, D.A (ANAESTHETIST)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor4.png" alt="doctor-image" class="img-fluid w-100"  style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. LEELA MATHEW</a></h4>
-              <p>MBBS, MS, DO (CONSULTANT OPHTHALMOLOGIST)</p>
-            </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. PREMI VARGHESE</a></h4>
+            <p>MBBS, DO, FIAS (PHACO SURGEON)</p>
           </div>
         </div>
       </div>
-      <div class="row shuffle-wrapper portfolio-gallery">
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor5.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. MAREEN ABRAHAM</a></h4>
-              <p>MS, DO, FCLI (CONSULTANT OPHTHALMOLOGIST)</p>
+
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor7.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat2"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/premi.jpeg" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. PREMI VARGHESE</a></h4>
-              <p>MBBS, DO, FIAS (PHACO SURGEON)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor7.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. SARA ANSA RENOSH</a></h4>
-              <p>MBBS, DO (CONSULTANT OPHTHALMOLOGIST)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor8.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. SALINI SASIDHARAN</a></h4>
-              <p>MBBS, M.S, FELLOW MEDICAL RETINA
-                (RETINA CONSULTANT)
-              </p>
-            </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. SARA ANSA RENOSH</a></h4>
+            <p>MBBS, DO (CONSULTANT OPHTHALMOLOGIST)</p>
           </div>
         </div>
       </div>
-      <div class="row shuffle-wrapper portfolio-gallery">
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor9.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. ATHULYA.S</a></h4>
-              <p>MBBS, DNB (PHACO SURGEON)</p>
+
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat4"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor8.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat3"]'>
-          <div class="position-relative doctor-inner-box">
-            <div class="doctor-profile">
-              <div class="doctor-img">
-                <img src="static/images/team/doctor11.png" alt="doctor-image" class="img-fluid w-100" style="height: 250px; border-radius: 30px;"/>
-              </div>
-            </div>
-            <div class="content mt-3">
-              <h4 class="mb-0"><a href="doctor-single.html">DR. MALU AJAY</a></h4>
-              <p>MBBS, MD DNB GENERAL MEDICINE
-                CONSULTANT PHYSICIAN
-                </p>
-            </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. SALINI SASIDHARAN</a></h4>
+            <p>MBBS, M.S, FELLOW MEDICAL RETINA
+              (RETINA CONSULTANT)
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div class="row shuffle-wrapper portfolio-gallery">
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups='["cat1"]'>
+        <div class="position-relative doctor-inner-box">
+          <div class="doctor-profile">
+            <div class="doctor-img">
+              <img src="static/images/team/doctor9.png" alt="doctor-image" class="img-fluid w-100"
+                style="height: 250px; border-radius: 30px;" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4 class="mb-0"><a href="doctor-single.html">DR. ATHULYA.S</a></h4>
+            <p>MBBS, DNB (PHACO SURGEON)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
