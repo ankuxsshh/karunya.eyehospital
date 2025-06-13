@@ -1,89 +1,93 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Customer Experience | Karunya Eye Hospital
+Customer Experience | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Services</span>
-            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
-          </div>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Services</span>
+          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Customer Experience Section -->
-  <section class="customer-experience-section py-5">
-    <div class="container">
-      <div class="row shadow rounded bg-white overflow-hidden">
-        <!-- Text Content Left -->
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-          <h2 class="mb-4 text-primary fw-bold">Customer Experience</h2>
-          <p class="text-muted">At KEH, we prioritize your satisfaction. Our Optical Store (Insight Galleria) is designed to provide a welcoming and comfortable environment:</p>
-          <ul class="text-muted ps-3">
-            <li>
-              <strong>Expert Staff:</strong> Our knowledgeable team is dedicated to assisting you in finding the right eyewear. We take the time to understand your needs and preferences.
-            </li>
-            <li>
-              <strong>Try Before You Buy:</strong> Enjoy the convenience of trying on multiple frames in a relaxed setting to find the perfect fit.
-            </li>
-            <li>
-              <strong>After Hospital Services:</strong> We believe in long-term relationships with our customers. Our after Hospital services include adjustments, repairs, and advice on lens Hospital.
-            </li>
-          </ul>
-        </div>
+<!-- Customer Experience Section -->
+<section class="customer-experience-section py-5">
+  <div class="container">
+    <div class="row shadow rounded bg-white overflow-hidden">
+      
+      <!-- Text Content Left -->
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+        <h2 class="mb-4 text-primary fw-bold">Customer Experience</h2>
+        <p class="text-muted">
+          At KEH, we prioritize your satisfaction and are committed to providing a welcoming and comfortable environment. 
+          A caring and efficient experience, where patients feel valued and supported throughout their journey from consultation to recovery. 
+          Our team prioritizes comfort, clarity, and compassionate care at every step.
+        </p>
+        <ul class="text-muted ps-3">
+          <li><strong>Expert Staff:</strong> Our experienced team is dedicated to assisting you in finding the right eyewear.</li>
+          <li><strong>Try Before You Buy:</strong> Enjoy trying on multiple frames in a relaxed environment to find your perfect fit.</li>
+          <li><strong>After Hospital Services:</strong> We build long-term relationships with excellent after-sales services.</li>
+        </ul>
+      </div>
 
-        <!-- Image Right -->
-        <div class="col-lg-6 p-0">
-          <img src="path/to/customer-experience.jpg" alt="Customer Experience" class="img-fluid w-100 h-100 object-fit-cover" />
-        </div>
+      <!-- Image Right: Vertically Centered with Actual Height -->
+      <div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+        <img src="static/images/customer.jpeg" alt="Customer Experience" class="img-fluid" style="max-height: 100%; height: auto;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Doctors Section -->
+<section class="our-doctors-section py-5">
+  <div class="container">
+    <div class="row shadow rounded bg-white overflow-hidden">
+      <!-- Image Left -->
+      <div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+        <img src="https://eyeinstituteaz.com/wp-content/uploads/sites/4/2019/09/visit-the-eye-doctor.jpg" alt="Customer Experience" class="img-fluid" style="max-height: 100%; height: auto;" />
+      </div>
+
+      <!-- Text Right -->
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center order-lg-2 order-1">
+        <h2 class="mb-4 text-primary fw-bold">Our Doctors</h2>
+        <p class="text-muted">Karunya Eye Hospital’s experienced doctors provide expert, compassionate eye Hospital
+          across various specialties, including cataract surgery & retinal Hospital. Using advanced technology, they
+          offer personalised treatment for all your vision needs, ensuring the highest standards of Hospital.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Our Doctors Section -->
-  <section class="our-doctors-section py-5">
-    <div class="container">
-      <div class="row shadow rounded bg-white overflow-hidden">
-        <!-- Image Left -->
-        <div class="col-lg-6 p-0 order-lg-1 order-2">
-          <img src="path/to/our-doctors.jpg" alt="Our Doctors" class="img-fluid w-100 h-100 object-fit-cover" />
-        </div>
-
-        <!-- Text Right -->
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center order-lg-2 order-1">
-          <h2 class="mb-4 text-primary fw-bold">Our Doctors</h2>
-          <p class="text-muted">Karunya Eye Hospital’s experienced doctors provide expert, compassionate eye Hospital across various specialties, including cataract surgery & retinal Hospital. Using advanced technology, they offer personalised treatment for all your vision needs, ensuring the highest standards of Hospital.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 
 {% block styles %}
-  <style>
-    .customer-experience-section,
-    .our-doctors-section {
-      background-color: #f8f9fa;
+<style>
+  .customer-experience-section,
+  .our-doctors-section {
+    background-color: #f8f9fa;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+
+    .customer-experience-section .row,
+    .our-doctors-section .row {
+      flex-direction: column-reverse;
     }
-    
-    .object-fit-cover {
-      object-fit: cover;
-      height: 100%;
-    }
-    
-    @media (max-width: 768px) {
-      .customer-experience-section .row,
-      .our-doctors-section .row {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
+  }
+</style>
 {% endblock %}
