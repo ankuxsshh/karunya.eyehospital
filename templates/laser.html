@@ -1,68 +1,71 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Retinal Laser Therapy | Karunya Eye Hospital
+Retinal Laser Therapy | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Services</span>
-            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
-          </div>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Services</span>
+          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="retinal-therapy-section py-5">
-    <div class="container">
-      <div class="row shadow rounded bg-light overflow-hidden">
-        <!-- Text Content Left -->
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-          <h2 class="mb-4 text-primary fw-bold">Retinal Laser Therapy</h2>
-          <p class="text-muted">Our clinic is equipped with advanced laser systems for treating retinal diseases, including:</p>
-          <ul class="text-muted">
-            <li>
-              <strong>Panretinal Photocoagulation (PRP)</strong>
-            </li>
-            <li>
-              <strong>Focal laser (Photocoagulation)</strong>
-            </li>
-            <li>
-              <strong>Barrage Laser</strong>
-            </li>
-          </ul>
-        </div>
+<section class="retinal-therapy-section py-5">
+  <div class="container">
+    <div class="row shadow rounded bg-light overflow-hidden">
+      <!-- Text Content Left -->
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+        <h2 class="mb-4 text-primary fw-bold">Retinal Laser Therapy</h2>
+        <p class="text-muted">Our clinic is equipped with advanced laser systems for treating retinal diseases,
+          including:</p>
+        <ul class="text-muted">
+          <li>
+            <strong>Panretinal Photocoagulation (PRP)</strong>
+          </li>
+          <li>
+            <strong>Focal laser (Photocoagulation)</strong>
+          </li>
+          <li>
+            <strong>Barrage Laser</strong>
+          </li>
+        </ul>
+      </div>
 
-        <!-- Image Right -->
-        <div class="col-lg-6 p-0">
-          <img src="https://www.texasretina.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-25-at-1.11.32-PM-1200x792.png" alt="Retinal Laser Therapy" class="img-fluid w-100 h-100 object-fit-cover" />
-        </div>
+      <!-- Image Right -->
+      <div class="col-lg-6 p-0">
+        <img
+          src="https://www.texasretina.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-25-at-1.11.32-PM-1200x792.png"
+          alt="Retinal Laser Therapy" class="img-fluid w-100 h-100 object-fit-cover" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 
 {% block styles %}
-  <style>
-    .retinal-therapy-section {
-      background-color: #f0f4f8;
+<style>
+  .retinal-therapy-section {
+    background-color: #f0f4f8;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .retinal-therapy-section .row {
+      flex-direction: column-reverse;
     }
-    
-    .object-fit-cover {
-      object-fit: cover;
-      height: 100%;
-    }
-    
-    @media (max-width: 768px) {
-      .retinal-therapy-section .row {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
+  }
+</style>
 {% endblock %}

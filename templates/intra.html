@@ -1,64 +1,67 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Intravitreal Services | Karunya Eye Hospital
+Intravitreal Services | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Services</span>
-            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
-          </div>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Services</span>
+          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="intravitreal-services-section py-5">
-    <div class="container">
-      <div class="row shadow rounded bg-light overflow-hidden">
-        <!-- Text Content Left -->
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-          <h2 class="mb-4 text-primary fw-bold">Intravitreal Services</h2>
-          <p class="text-muted">Our retina specialists treat retinal conditions like Diabetic Retinopathy, Retinal Vein Occlusion (RVO), Age-related Macular Degeneration (AMD), Polypoidal Choroidal Vasculopathy (PCV), and other Cytomegalovirus (CMVs).</p>
-          <p class="text-muted">We provide a variety of Anti-VEGF injections such as:</p>
-          <ul class="text-muted ps-3">
-            <li>Injection Razumab (Ranibizumab - 2.3mg)</li>
-            <li>Injection Accentrix (Ranibizumab - 10mg/ml)</li>
-            <li>Injection Pagenax (Brolucizumab - 120mg/ml)</li>
-            <li>Injection Eylea (Aflibercept - 40mg/ml)</li>
-          </ul>
-        </div>
+<section class="intravitreal-services-section py-5">
+  <div class="container">
+    <div class="row shadow rounded bg-light overflow-hidden">
+      <!-- Text Content Left -->
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+        <h2 class="mb-4 text-primary fw-bold">Intravitreal Services</h2>
+        <p class="text-muted">Our retina specialists treat retinal conditions like Diabetic Retinopathy, Retinal Vein
+          Occlusion (RVO), Age-related Macular Degeneration (AMD), Polypoidal Choroidal Vasculopathy (PCV), and other
+          Cytomegalovirus (CMVs).</p>
+        <p class="text-muted">We provide a variety of Anti-VEGF injections such as:</p>
+        <ul class="text-muted ps-3">
+          <li>Injection Razumab (Ranibizumab - 2.3mg)</li>
+          <li>Injection Accentrix (Ranibizumab - 10mg/ml)</li>
+          <li>Injection Pagenax (Brolucizumab - 120mg/ml)</li>
+          <li>Injection Eylea (Aflibercept - 40mg/ml)</li>
+        </ul>
+      </div>
 
-        <!-- Image Right -->
-        <div class="col-lg-6 p-0">
-          <img src="https://tunbridgewellseyecentre.co.uk/wp-content/uploads/2024/09/TWEC_General-05259.jpg" alt="Intravitreal Services" class="img-fluid w-100 h-100 object-fit-cover" />
-        </div>
+      <!-- Image Right -->
+      <div class="col-lg-6 p-0">
+        <img src="https://tunbridgewellseyecentre.co.uk/wp-content/uploads/2024/09/TWEC_General-05259.jpg"
+          alt="Intravitreal Services" class="img-fluid w-100 h-100 object-fit-cover" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 
 {% block styles %}
-  <style>
-    .intravitreal-services-section {
-      background-color: #f0f4f8;
+<style>
+  .intravitreal-services-section {
+    background-color: #f0f4f8;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .intravitreal-services-section .row {
+      flex-direction: column-reverse;
     }
-    
-    .object-fit-cover {
-      object-fit: cover;
-      height: 100%;
-    }
-    
-    @media (max-width: 768px) {
-      .intravitreal-services-section .row {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
+  }
+</style>
 {% endblock %}

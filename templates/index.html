@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
 Home | Karunya Eye Hospital
 {% endblock %}
@@ -356,6 +356,40 @@ Home | Karunya Eye Hospital
     </div>
   </div>
 </section>
+
+<!-- Accreditation & Certification Start -->
+<section class="section about">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Content Section: 50% Width -->
+      <div class="col-lg-6 col-sm-12">
+        <div class="about-content pr-lg-4 mb-4 mb-lg-0">
+          <h2 class="title-color">Accreditation and Certification</h2>
+          <p class="mt-4 mb-4" style="font-size: 16px; line-height: 1.9;">
+            Since 2018, Karunya Eye Hospital has proudly been <strong>NABH Certified</strong>, reaffirming our
+            commitment to
+            patient safety and superior quality of care.
+            NABH (National Accreditation Board for Hospitals & Healthcare Providers), part of the Quality Council of
+            India,
+            sets rigorous standards covering over 600 parameters — from clinical governance and infection control to
+            operational protocols and patient rights :contentReference[oaicite:1]{index=1}.
+            Achieving and maintaining NABH accreditation signals that KEH adheres to internationally benchmarked best
+            practices, ensures patient‑centric care, and continually improves its systems and processes
+            :contentReference[oaicite:2]{index=2}.
+          </p>
+        </div>
+      </div>
+      <!-- Image Section: 50% Width -->
+      <div class="col-lg-6 col-sm-12 text-center">
+        <img src="{% static 'images/acc.png' %}" alt="NABH Certified Since 2018" class="img-fluid"
+          style="max-width: 300px;" />
+        <p class="mt-2">NABH Certified Since 2018</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Accreditation & Certification End -->
+
 
 <!-- Start Government Projects Section -->
 <section class="section clients">

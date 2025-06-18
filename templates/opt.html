@@ -1,58 +1,65 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  General Ophthalmology | Karunya Eye Hospital
+General Ophthalmology | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Services</span>
-            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
-          </div>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Services</span>
+          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="general-ophthalmology-section py-5">
-    <div class="container">
-      <div class="row shadow rounded bg-light overflow-hidden">
-        <!-- Text Content Left -->
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-          <h2 class="mb-4 text-primary fw-bold">General Ophthalmology</h2>
-          <p class="text-muted">KEH has always been the best eye hospital for general ophthalmology, where we offer comprehensive eye Hospital, encompassing everything from routine vision checks to diagnosing and treating eye diseases. Our team of experienced ophthalmologists serves patients of all ages, from newborns to the elderly, ensuring that each individual receives personalised Hospital.</p>
-          <p class="text-muted">Our general ophthalmologists are often the first point of contact for patients, providing thorough eye examinations and managing a variety of eye conditions. They play a critical role in diagnosing various disorders and referring patients to specialist services when necessary, ensuring holistic and continuous eye Hospital.</p>
-        </div>
+<section class="general-ophthalmology-section py-5">
+  <div class="container">
+    <div class="row shadow rounded bg-light overflow-hidden">
+      <!-- Text Content Left -->
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+        <h2 class="mb-4 text-primary fw-bold">General Ophthalmology</h2>
+        <p class="text-muted">KEH has always been the best eye hospital for general ophthalmology, where we offer
+          comprehensive eye Hospital, encompassing everything from routine vision checks to diagnosing and treating eye
+          diseases. Our team of experienced ophthalmologists serves patients of all ages, from newborns to the elderly,
+          ensuring that each individual receives personalised Hospital.</p>
+        <p class="text-muted">Our general ophthalmologists are often the first point of contact for patients, providing
+          thorough eye examinations and managing a variety of eye conditions. They play a critical role in diagnosing
+          various disorders and referring patients to specialist services when necessary, ensuring holistic and
+          continuous eye Hospital.</p>
+      </div>
 
-        <!-- Image Right -->
-        <div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
-          <img src="https://www.westernlasereye.com/wp-content/uploads/shutterstock_1565916823-1.jpg" alt="Customer Experience" class="img-fluid" style="max-height: 100%; height: auto;" />
-        </div>
+      <!-- Image Right -->
+      <div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+        <img src="https://www.westernlasereye.com/wp-content/uploads/shutterstock_1565916823-1.jpg"
+          alt="Customer Experience" class="img-fluid" style="max-height: 100%; height: auto;" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 
 {% block styles %}
-  <style>
-    .general-ophthalmology-section {
-      background-color: #f0f4f8;
+<style>
+  .general-ophthalmology-section {
+    background-color: #f0f4f8;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .general-ophthalmology-section .row {
+      flex-direction: column-reverse;
     }
-    
-    .object-fit-cover {
-      object-fit: cover;
-      height: 100%;
-    }
-    
-    @media (max-width: 768px) {
-      .general-ophthalmology-section .row {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
+  }
+</style>
 {% endblock %}

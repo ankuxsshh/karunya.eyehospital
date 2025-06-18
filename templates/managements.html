@@ -23,7 +23,7 @@ Managements | Karunya Eye Hospital
 </section>
 
 <!-- Management Team Section -->
-<section class="management-section py-5 bg-light">
+<section class="management-section py-5">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="title-color">Our Management Team</h2>
@@ -33,59 +33,72 @@ Managements | Karunya Eye Hospital
     <!-- Row 1: Chairman Full Width -->
     <div class="row justify-content-center mb-4">
       <div class="col-12">
-        <div class="card border-0 shadow rounded text-center w-100"
-          style="border-radius: 30px !important; width: 100%;">
+        <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
           <img src="{% static 'images/chairman.png' %}" class="card-img-top img-fluid mx-auto" alt="Chairman"
             style="width: 300px; height: auto; margin-top: 20px; border-radius: 30px !important;" />
           <div class="card-body">
             <h5 class="card-title mb-1">Mr. Tilly B George</h5>
             <h4 class="card-title fs-5">Chairman</h4>
             <p class="card-text" style="font-size: 13px; max-width: 900px; margin: 0 auto;">
-              He has been successful in all his efforts to grow Karunya Eye Hospital as one of the best Eye Hospitals in
-              Kerala.
-              Being the Chairman & Managing Director of the Hospital, he aims for a system that is process driven and
-              immaculate,
-              which follows strict protocol and rules. The tradition of “committed to excellent eye care” continues from
-              the time
-              the hospital started 18 years ago, thanks to the meticulous system initiated by his family. His knowledge
-              in the field
-              of Opticals and Eye Clinic, has enabled him to relate to doctors and paramedics working in the hospital.
-              Before taking
-              on the reins of administration at Karunya Eye Hospital, he had extended his knowledge for the growth of
-              K.K Opticals &
-              Eye Clinic at Adoor, which he has started around 40 years ago. Following the tradition of quality
-              treatment at affordable
-              cost, he upholds the mantra of the hospital “committed to excellent eye care”.
+              <span class="short-text">
+                He has been successful in all his efforts to grow Karunya Eye Hospital as one of the best Eye Hospitals
+                in Kerala...
+              </span>
+              <span class="full-text d-none">
+                He has been successful in all his efforts to grow Karunya Eye Hospital as one of the best Eye Hospitals
+                in Kerala.
+                Being the Chairman & Managing Director of the Hospital, he aims for a system that is process driven and
+                immaculate,
+                which follows strict protocol and rules. The tradition of “committed to excellent eye care” continues
+                from the time
+                the hospital started 18 years ago, thanks to the meticulous system initiated by his family. His
+                knowledge in the field
+                of Opticals and Eye Clinic, has enabled him to relate to doctors and paramedics working in the hospital.
+                Before taking
+                on the reins of administration at Karunya Eye Hospital, he had extended his knowledge for the growth of
+                K.K Opticals &
+                Eye Clinic at Adoor, which he has started around 40 years ago. Following the tradition of quality
+                treatment at affordable
+                cost, he upholds the mantra of the hospital “committed to excellent eye care”.
+              </span>
             </p>
+            <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleChairmanText(this)">View
+              More</button>
           </div>
         </div>
       </div>
     </div>
+
+
   </div>
 
   <!-- Row 2: Other Management Members -->
   <div class="row justify-content-center">
-    <!-- Card 2 -->
     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
       <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-        <img src="{% static 'images/thomas.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <img src="{% static 'images/thomas.png' %}" class="card-img-top img-fluid" alt="Thomas John" />
         <div class="card-body">
           <h5 class="card-title mb-1">Mr. Thomas John</h5>
           <h4 class="card-title fs-5">Chief Operating Officer</h4>
-          <p class="card-text" style="font-size: 13px;">
-            Mr. Thomas John joined with Karunya Eye Hospital in July 2017 and his contributions helped the Hospital to
-            reach in its present position. He is the Chief Operating Officer responsible for monitoring the strictness
-            in the operational function of the hospital. By pioneering various strategies of administration for
-            upgrading the internal quality, his admiring service for the past eight years has tagged him with the
-            identity as the strongest pillar of KEH. He plays a major role in determining the organisation’s operations,
-            human resources, empanelment with Government Projects like ECHS, CGHS, MEDISEP and major Private Health
-            Insurance Companies in India and accreditation process with NABH. He is actively involved in the day-to-day
-            activities of the organisation. No matter how busy, he ensures that he finds time to personally mentor staff
-            and help them hone their skills. He has around 35 years of experience and prior to joining Karunya, he had
-            worked with reputed Companies in India and abroad.</p>
+          <p class="card-text description" style="font-size: 13px;">
+            Mr. Thomas joined with Karunya Eye Hospital August 2017 and his contributions helped the Hospital to reach
+            in its present position...
+            <span class="more-text d-none">
+              He plays a major role in determining the organisation’s operations, human resources, empanelment with
+              Government Projects like ECHS, CGHS, MEDISEP, around 32 major Private Health Insurance Companies and
+              accreditation process with NABH. He is actively involved in the day-to-day activities of the organisation.
+              He has taken up the role of an agent of transformation to support the organisation building, optimise
+              value across overall organisational processes. No matter how busy, he ensures that he finds time to
+              personally mentor staff and help them hone their skills. He has around 35 years of experience and prior to
+              joining Karun.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
         </div>
       </div>
     </div>
+
+
 
     <!-- Card 3 -->
     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
@@ -94,9 +107,129 @@ Managements | Karunya Eye Hospital
         <div class="card-body">
           <h5 class="card-title mb-1">Mr. Suresh Kumar</h5>
           <h4 class="card-title fs-5">Centre Head Kottarakara</h4>
-          <p class="card-text" style="font-size: 13px;">Having Twenty Six years of experience with Army Medical Corps (OT Manager) and Ten Years
-            of experience in reputed Eye Hospitals in Kerala in the position as OT Manager and Centre Head. Presently he
-            is the Team Leader & Centre Head of our Kottarakkara Centre.</p>
+          <p class="card-text description" style="font-size: 13px;">
+            Having Twenty Six years of experience with Army Medical Corps (OT Manager) and Ten Years
+            of experience in reputed Eye Hospitals in Kerala...
+            <span class="more-text d-none">
+              ...in the position as OT Manager and Centre Head. Presently he is the Team Leader & Centre Head of our
+              Kottarakkara Centre.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/centrehead.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Mukesh Kumar</h5>
+          <h4 class="card-title fs-5">Centre Head Pandalam</h4>
+          <p class="card-text" style="font-size: 13px;">
+            Mr. Mukhesh drives the customer relations of Karunya Eye Hospital, and ensures that a healthy relationship
+            is maintained between the hospital and its patients/customers...
+            <span class="more-text d-none">
+              He is working with Karunya for the last seven years and prior to joining Karunya, he has worked in
+              different positions in reputed Private Organizations in India as well as abroad over 27 years. Passionate
+              about people and building relations, he is capable of handling difficult situations without losing his
+              cool and addresses any dispute the public has with the hospital. He is now the Centre Head & Team Leader
+              of our Pandalam Centre.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Row 2: Other Management Members -->
+  <div class="row justify-content-center">
+    <!-- Card 2 -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/sup.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mrs. Jyothilekshmi.S</h5>
+          <h4 class="card-title fs-5">Nursing Superintendent</h4>
+          <p class="card-text" style="font-size: 13px;">
+            Working with Karunya since 2016. Oversee and coordinate all nursing staff and patient care activities...
+            <span class="more-text d-none">
+              ensuring the highest standards of ophthalmic nursing care are consistently maintained. Ensure accurate
+              implementation of clinical protocols, particularly for pre & post operative eye care, infection control,
+              and medication administration. Organize regular training sessions to keep nursing staff updated on the
+              latest ophthalmic procedures, nursing practices, and patient safety standards. Monitor nursing practices
+              and outcomes to maintain compliance with NABH standards relevant to eye care. Work closely with
+              ophthalmologists and allied health professionals to ensure seamless patient care, addressing individual
+              needs and enhancing patient satisfaction. Manage nursing schedules, optimize staff allocation, and ensure
+              availability of necessary supplies and equipment within the nursing units. Develop, implement, and
+              periodically review nursing policies and standard operating procedures tailored to the specific needs of
+              ophthalmic patients. Coordinate response protocols for ophthalmic emergencies and support the nursing team
+              in delivering timely, effective care. Supervise the nursing team's involvement in patient education
+              regarding eye care, post-surgery instructions, and ongoing treatment plans. Ensure accurate and timely
+              documentation of nursing activities, patient care plans, and incident reports, maintaining confidentiality
+              and data integrity.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/hn.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mrs. Kala.K.R </h5>
+          <h4 class="card-title fs-5">Head Nurse</h4>
+          <p class="card-text" style="font-size: 13px;">
+            Lead and manage the nursing team across all departments, ensuring quality patient care and adherence to
+            ophthalmic nursing standards.
+            <span class="more-text d-none">
+              Oversee nursing care for pre-operative, intra-operative, and post-operative eye patients, ensuring timely
+              and compassionate service. Conduct regular training sessions to enhance staff knowledge in ophthalmic
+              procedures, infection control, and patient communication. Implement and monitor hospital policies,
+              standard operating procedures, and NABH accreditation standards relevant to eye care. Ensure availability
+              and proper maintenance of nursing supplies, instruments, and medications in coordination with the OT and
+              pharmacy. Support patient education regarding eye treatments, surgeries, post-operative care, and
+              follow-up procedures. Maintain accurate nursing records, patient reports, and incident logs, ensuring
+              confidentiality and data accuracy. Promote a culture of safety and continuous improvement in clinical
+              practices, hygiene, and patient handling.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/pro.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Cheriyan George</h5>
+          <h4 class="card-title fs-5">Public Relations Officer</h4>
+          <p class="card-text" style="font-size: 13px;">
+            More than Twenty-Five years of overseas experience in Administration, Logistics and Offshore Operations in
+            Middle East & African Continent.
+            <span class="more-text d-none">
+              Act as the first point of contact for patients and their families, providing clear information about
+              services, appointments, procedures, and hospital policies. Promote a positive image of the hospital
+              through courteous interaction, professional conduct, and consistent communication with the public and
+              media. Liaison Between Patients and Hospital Departments. Co-ordinate with medical, administrative, and
+              nursing teams to ensure patient needs and concerns are addressed promptly and effectively. Organize and
+              support eye camps, awareness drives, and community engagement programs to educate the public about eye
+              health and hospital services. Collect patient feedback and complaints, coordinate resolution with relevant
+              departments, and ensure issues are addressed to enhance patient satisfaction. Support planning and
+              execution of hospital events, conferences, guest visits, and other public functions. Work with the
+              marketing team to support campaigns that highlight hospital services, specialties, and achievements in eye
+              care.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
         </div>
       </div>
     </div>
@@ -104,20 +237,64 @@ Managements | Karunya Eye Hospital
     <!-- Card 4 -->
     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
       <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-        <img src="{% static 'images/centrehead.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <img src="{% static 'images/deepa.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
         <div class="card-body">
-          <h5 class="card-title mb-1">Mr. Mukesh Kumar</h5>
-          <h4 class="card-title fs-5">Centre Head Pandalam</h4>
-          <p class="card-text" style="font-size: 13px;">Mr. Mukhesh drives the customer relations of Karunya Eye Hospital, and ensures that a
-            healthy relationship is maintained between the hospital and its patients/customers. He is working with
-            Karunya for the last seven years and prior to joining Karunya, he has worked in different positions in
-            reputed Private Organizations in India as well as abroad over 27 years. Passionate about people and building
-            relations, he is capable of handling difficult situations without losing his cool and addresses any dispute
-            the public has with the hospital. He is now the Centre Head & Team Leader of our Pandalam Centre.</p>
+          <h5 class="card-title mb-1">Mrs. Deepa A.R</h5>
+          <h4 class="card-title fs-5">Chief Nursing Officer</h4>
+          <p class="card-text" style="font-size: 13px;">
+            Mrs. Deepa, serving as the Chief Nursing Officer at Karunya Eye Hospital for the past eighteen years, is
+            dedicated to upholding the highest standards of eye care.
+            <span class="more-text d-none">
+              She is playing a vital role in advancing healthcare quality as per NABH Standards. She is a distinguished
+              nursing professional with over 25 years of OT experience and a deep commitment to healthcare excellence.
+              She is actively involved in the OT & OP activities of the organisation with a high standard of dedication.
+            </span>
+          </p>
+          <button class="btn btn-sm btn-outline-primary mt-2 toggle-btn" onclick="toggleText(this)">View More</button>
         </div>
       </div>
     </div>
+
   </div>
   </div>
 </section>
+
+<script>
+  function toggleText(btn) {
+    const description = btn.previousElementSibling;
+    const moreText = description.querySelector('.more-text');
+
+    if (moreText.classList.contains('d-none')) {
+      moreText.classList.remove('d-none');
+      btn.innerText = 'View Less';
+    } else {
+      moreText.classList.add('d-none');
+      btn.innerText = 'View More';
+    }
+  }
+</script>
+<style>
+  .management-section {
+    margin: 40px;
+  }
+</style>
+
+<script>
+  function toggleChairmanText(button) {
+    const cardBody = button.closest('.card-body');
+    const shortText = cardBody.querySelector('.short-text');
+    const fullText = cardBody.querySelector('.full-text');
+
+    if (fullText.classList.contains('d-none')) {
+      shortText.classList.add('d-none');
+      fullText.classList.remove('d-none');
+      button.innerText = 'View Less';
+    } else {
+      shortText.classList.remove('d-none');
+      fullText.classList.add('d-none');
+      button.innerText = 'View More';
+    }
+  }
+</script>
+
 {% endblock %}

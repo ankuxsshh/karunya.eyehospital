@@ -1,229 +1,250 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Services | Karunya Eye Hospital
+Services | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Services</span>
-            <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Services</span>
+          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="title-color">Services</h2>
+    </div>
+    <div class="row">
+      <!-- Service Card 1 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="lens" class="service-card w-100">
+          <img src="https://www.trinityeyehospital.com/images/contact-lens.webp" alt="Contact Lens Clinic"
+            class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Contact Lens Clinic</h5>
           </div>
-        </div>
+        </a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="cataract" class="service-card w-100">
+          <img src="https://www.apexeyeandivf.com/wp-content/uploads/2023/02/cataract.png" alt="Cataract & IOL Clinic"
+            class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Cataract & IOL Clinic</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="opt" class="service-card w-100">
+          <img src="https://www.westernlasereye.com/wp-content/uploads/shutterstock_1565916823-1.jpg"
+            alt="General Ophthalmology" class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">General Ophthalmology</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="retina" class="service-card w-100">
+          <img
+            src="https://cdn.dotplus.in/Cloud/SSEH/SSEHImage/Image19481d2904834338b47e0ae28c0be57c3750a5d4-09e8-4433-8c95-4482fcad8ef7.jpg"
+            alt="Medical Retinal Service" class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Medical Retinal Service</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="laser" class="service-card w-100">
+          <img
+            src="https://www.texasretina.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-25-at-1.11.32-PM-1200x792.png"
+            alt="Retinal Laser Therapy" class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Retinal Laser Therapy</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="intra" class="service-card w-100">
+          <img src="https://tunbridgewellseyecentre.co.uk/wp-content/uploads/2024/09/TWEC_General-05259.jpg"
+            alt="Intravitreal Services" class="img-fluid rounded-top service-image" style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Intravitreal Services</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 7 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="store" class="service-card w-100">
+          <img src="static/images/shop.jpeg" alt="Optical Store" class="img-fluid rounded-top service-image"
+            style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Optical Store</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Service Card 8 -->
+      <div class="col-lg-3 col-md-6 mb-4 d-flex">
+        <a href="customer" class="service-card w-100">
+          <img src="static/images/customer.jpeg" alt="Customer Experience" class="img-fluid rounded-top service-image"
+            style="height: 150px;" />
+          <div class="card-body">
+            <h5 class="card-title">Patients Experience</h5>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Services Section -->
-  <section class="services-section py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="title-color">Services</h2>
+<!-- Low Vision Section -->
+<section class="low-vision-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <img
+          src="https://discoveryeye.org/wp-content/uploads/2019/05/12507304_433258730202621_7070301688899763966_n-e1480571236328.jpg"
+          alt="Low Vision" class="img-fluid rounded" />
       </div>
-      <div class="row">
-        <!-- Service Card 1 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="lens" class="service-card w-100">
-            <img src="https://www.trinityeyehospital.com/images/contact-lens.webp" alt="Contact Lens Clinic" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Contact Lens Clinic</h5>
-            </div>
-          </a>
-        </div>
+      <div class="col-lg-6">
+        <h2 class="text-capitalize mb-3">What Does Low Vision Mean?</h2>
+        <p>Low vision is a term used to describe a visual impairment that cannot be fully corrected through traditional
+          means such as contact lenses, eyeglasses, medications, or surgical procedures. This condition can
+          significantly impact an individual's ability to perform everyday activities, from reading and driving to
+          recognizing faces and navigating familiar environments. While low vision presents challenges, many individuals
+          can benefit from specialised visual aids and adaptive strategies, empowering them to enhance their remaining
+          sight and maintain independence in their daily lives.</p>
 
-        <!-- Service Card 2 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="cataract" class="service-card w-100">
-            <img src="https://www.apexeyeandivf.com/wp-content/uploads/2023/02/cataract.png" alt="Cataract & IOL Clinic" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Cataract & IOL Clinic</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="opt" class="service-card w-100">
-            <img src="https://www.westernlasereye.com/wp-content/uploads/shutterstock_1565916823-1.jpg" alt="General Ophthalmology" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">General Ophthalmology</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="retina" class="service-card w-100">
-            <img src="https://cdn.dotplus.in/Cloud/SSEH/SSEHImage/Image19481d2904834338b47e0ae28c0be57c3750a5d4-09e8-4433-8c95-4482fcad8ef7.jpg" alt="Medical Retinal Service" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Medical Retinal Service</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="laser" class="service-card w-100">
-            <img src="https://www.texasretina.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-25-at-1.11.32-PM-1200x792.png" alt="Retinal Laser Therapy" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Retinal Laser Therapy</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 6 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="intra" class="service-card w-100">
-            <img src="https://tunbridgewellseyecentre.co.uk/wp-content/uploads/2024/09/TWEC_General-05259.jpg" alt="Intravitreal Services" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Intravitreal Services</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 7 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="store" class="service-card w-100">
-            <img src="static/images/shop.jpeg" alt="Optical Store" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Optical Store</h5>
-            </div>
-          </a>
-        </div>
-
-        <!-- Service Card 8 -->
-        <div class="col-lg-3 col-md-6 mb-4 d-flex">
-          <a href="customer" class="service-card w-100">
-            <img src="static/images/customer.jpeg" alt="Customer Experience" class="img-fluid rounded-top service-image" style="height: 150px;" />
-            <div class="card-body">
-              <h5 class="card-title">Patients Experience</h5>
-            </div>
-          </a>
-        </div>
+        <h4 class="mt-4">Causes of Low Vision</h4>
+        <ul>
+          <li><strong>Eye Injuries:</strong> Accidents and trauma to the eye can cause severe damage, leading to lasting
+            visual impairment.</li>
+          <li><strong>Macular Degeneration:</strong> This condition affects the macula and impairs central vision,
+            especially in older adults.</li>
+          <li><strong>Glaucoma:</strong> A group of diseases that damage the optic nerve and may lead to permanent
+            vision loss if untreated.</li>
+          <li><strong>Albinism:</strong> A genetic condition affecting pigment, which can result in poor visual acuity
+            and sensitivity to light.</li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Low Vision Section -->
-  <section class="low-vision-section py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4">
-          <img src="https://discoveryeye.org/wp-content/uploads/2019/05/12507304_433258730202621_7070301688899763966_n-e1480571236328.jpg" alt="Low Vision" class="img-fluid rounded" />
-        </div>
-        <div class="col-lg-6">
-          <h2 class="text-capitalize mb-3">What Does Low Vision Mean?</h2>
-          <p>Low vision is a term used to describe a visual impairment that cannot be fully corrected through traditional means such as contact lenses, eyeglasses, medications, or surgical procedures. This condition can significantly impact an individual's ability to perform everyday activities, from reading and driving to recognizing faces and navigating familiar environments. While low vision presents challenges, many individuals can benefit from specialised visual aids and adaptive strategies, empowering them to enhance their remaining sight and maintain independence in their daily lives.</p>
-
-          <h4 class="mt-4">Causes of Low Vision</h4>
-          <ul>
-            <li><strong>Eye Injuries:</strong> Accidents and trauma to the eye can cause severe damage, leading to lasting visual impairment.</li>
-            <li><strong>Macular Degeneration:</strong> This condition affects the macula and impairs central vision, especially in older adults.</li>
-            <li><strong>Glaucoma:</strong> A group of diseases that damage the optic nerve and may lead to permanent vision loss if untreated.</li>
-            <li><strong>Albinism:</strong> A genetic condition affecting pigment, which can result in poor visual acuity and sensitivity to light.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 
 {% block styles %}
-  <style>
-    .low-vision-section {
-      background-color: #f8f9fa;
-    }
+<style>
+  .low-vision-section {
+    background-color: #f8f9fa;
+  }
 
-    .low-vision-section h2 {
-      font-size: 2rem;
-      font-weight: bold;
-    }
+  .low-vision-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-    .low-vision-section h4 {
-      font-size: 1.5rem;
-      color: #333;
-    }
+  .low-vision-section h4 {
+    font-size: 1.5rem;
+    color: #333;
+  }
 
-    .low-vision-section p {
-      font-size: 1rem;
-      color: #555;
-    }
+  .low-vision-section p {
+    font-size: 1rem;
+    color: #555;
+  }
 
-    .low-vision-section ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+  .low-vision-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 
-    .low-vision-section ul li {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 10px;
-    }
+  .low-vision-section ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
 
-    .low-vision-section ul li strong {
-      font-weight: bold;
-      color: #333;
-    }
+  .low-vision-section ul li strong {
+    font-weight: bold;
+    color: #333;
+  }
 
-    .low-vision-section img {
-      max-height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+  .low-vision-section img {
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
-    .services-section .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .services-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .service-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      background-color: #fff;
-    }
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: #fff;
+  }
 
-    .service-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
-    .service-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+  .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 
-    .card-body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      min-height: 100px;
-    }
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100px;
+  }
 
-    .card-title {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #333;
-      text-align: center;
-      margin: 0;
-    }
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
 
-    .services-section .col-lg-3 {
-      display: flex;
-    }
-  </style>
+  .services-section .col-lg-3 {
+    display: flex;
+  }
+</style>
 {% endblock %}
