@@ -1,80 +1,123 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Managements | Karunya Eye Hospital
+Managements | Karunya Eye Hospital
 {% endblock %}
 
 {% block content %}
-  {% load static %}
+{% load static %}
 
-  <!-- Page Title Section -->
-  <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-left">
-            <span class="text-white">Management</span>
-            <h1 class="text-capitalize mb-5 text-lg">Management at Karunya Eye Hospital</h1>
+<!-- Page Title Section -->
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-left">
+          <span class="text-white">Management</span>
+          <h1 class="text-capitalize mb-5 text-lg">Management at Karunya Eye Hospital</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Management Team Section -->
+<section class="management-section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="title-color">Our Management Team</h2>
+      <p class="text-muted">Meet the dedicated professionals who lead our hospital with hospitality and excellence.</p>
+    </div>
+
+    <!-- Row 1: Chairman Full Width -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-12">
+        <div class="card border-0 shadow rounded text-center w-100"
+          style="border-radius: 30px !important; width: 100%;">
+          <img src="{% static 'images/chairman.png' %}" class="card-img-top img-fluid mx-auto" alt="Chairman"
+            style="width: 300px; height: auto; margin-top: 20px; border-radius: 30px !important;" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Mr. Tilly B George</h5>
+            <h4 class="card-title fs-5">Chairman</h4>
+            <p class="card-text" style="font-size: 13px; max-width: 900px; margin: 0 auto;">
+              He has been successful in all his efforts to grow Karunya Eye Hospital as one of the best Eye Hospitals in
+              Kerala.
+              Being the Chairman & Managing Director of the Hospital, he aims for a system that is process driven and
+              immaculate,
+              which follows strict protocol and rules. The tradition of “committed to excellent eye care” continues from
+              the time
+              the hospital started 18 years ago, thanks to the meticulous system initiated by his family. His knowledge
+              in the field
+              of Opticals and Eye Clinic, has enabled him to relate to doctors and paramedics working in the hospital.
+              Before taking
+              on the reins of administration at Karunya Eye Hospital, he had extended his knowledge for the growth of
+              K.K Opticals &
+              Eye Clinic at Adoor, which he has started around 40 years ago. Following the tradition of quality
+              treatment at affordable
+              cost, he upholds the mantra of the hospital “committed to excellent eye care”.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Management Team Section -->
-  <section class="management-section py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="title-color">Our Management Team</h2>
-        <p class="text-muted">Meet the dedicated professionals who lead our hospital with hospitality and excellence.</p>
-      </div>
-
-      <!-- Row 1: Chairman Centered --> <div class="row justify-content-center mb-4">
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-            <img src="{% static 'images/chairman.png' %}" class="card-img-top img-fluid mx-auto" alt="Chairman" style="width: 250px; height: auto; margin-top: 20px; border-radius: 30px !important;" /> <div class="card-body">
-              <h5 class="card-title mb-1">Mr. Tilly B George</h5> <h4 class="card-title fs-5">Chairman</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 2: Other Management Members -->
-      <div class="row justify-content-center">
-        <!-- Card 2 -->
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-          <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-            <img src="{% static 'images/thomas.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
-            <div class="card-body">
-              <h5 class="card-title mb-1">Mr. Thomas John</h5>
-              <h4 class="card-title fs-5">Chief Operating Officer</h4>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-          <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-            <img src="{% static 'images/suresh.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
-            <div class="card-body">
-              <h5 class="card-title mb-1">Mr. Suresh Kumar</h5>
-              <h4 class="card-title fs-5">Centre Head Kottarakara</h4>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-          <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
-            <img src="{% static 'images/centrehead.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
-            <div class="card-body">
-              <h5 class="card-title mb-1">Mr. Mukesh Kumar</h5>
-              <h4 class="card-title fs-5">Centre Head Pandalam</h4>
-            </div>
-          </div>
+  <!-- Row 2: Other Management Members -->
+  <div class="row justify-content-center">
+    <!-- Card 2 -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/thomas.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Thomas John</h5>
+          <h4 class="card-title fs-5">Chief Operating Officer</h4>
+          <p class="card-text" style="font-size: 13px;">
+            Mr. Thomas John joined with Karunya Eye Hospital in July 2017 and his contributions helped the Hospital to
+            reach in its present position. He is the Chief Operating Officer responsible for monitoring the strictness
+            in the operational function of the hospital. By pioneering various strategies of administration for
+            upgrading the internal quality, his admiring service for the past eight years has tagged him with the
+            identity as the strongest pillar of KEH. He plays a major role in determining the organisation’s operations,
+            human resources, empanelment with Government Projects like ECHS, CGHS, MEDISEP and major Private Health
+            Insurance Companies in India and accreditation process with NABH. He is actively involved in the day-to-day
+            activities of the organisation. No matter how busy, he ensures that he finds time to personally mentor staff
+            and help them hone their skills. He has around 35 years of experience and prior to joining Karunya, he had
+            worked with reputed Companies in India and abroad.</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Card 3 -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/suresh.jpg' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Suresh Kumar</h5>
+          <h4 class="card-title fs-5">Centre Head Kottarakara</h4>
+          <p class="card-text" style="font-size: 13px;">Having Twenty Six years of experience with Army Medical Corps (OT Manager) and Ten Years
+            of experience in reputed Eye Hospitals in Kerala in the position as OT Manager and Centre Head. Presently he
+            is the Team Leader & Centre Head of our Kottarakkara Centre.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+      <div class="card border-0 shadow rounded text-center w-100" style="border-radius: 30px !important;">
+        <img src="{% static 'images/centrehead.png' %}" class="card-img-top img-fluid" alt="Centre Head" />
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Mukesh Kumar</h5>
+          <h4 class="card-title fs-5">Centre Head Pandalam</h4>
+          <p class="card-text" style="font-size: 13px;">Mr. Mukhesh drives the customer relations of Karunya Eye Hospital, and ensures that a
+            healthy relationship is maintained between the hospital and its patients/customers. He is working with
+            Karunya for the last seven years and prior to joining Karunya, he has worked in different positions in
+            reputed Private Organizations in India as well as abroad over 27 years. Passionate about people and building
+            relations, he is capable of handling difficult situations without losing his cool and addresses any dispute
+            the public has with the hospital. He is now the Centre Head & Team Leader of our Pandalam Centre.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 {% endblock %}

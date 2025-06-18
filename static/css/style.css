@@ -1815,7 +1815,7 @@ a:focus {
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
-  height: 300px;
+  height: 400px;
   border-radius: 30px !important;
   padding: 20px;
 }
